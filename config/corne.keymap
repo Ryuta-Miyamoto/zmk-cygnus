@@ -140,8 +140,8 @@
 &kp LEFT_GUI     &kp A                 &hml LEFT_CONTROL S   &hml LEFT_ALT D      &hml LEFT_GUI F      &kp G
 &kp H            &hmr RIGHT_GUI J      &hmr RIGHT_ALT K      &hmr RIGHT_CONTROL L &kp SEMI             &kp SINGLE_QUOTE
 
-&kp LANG2        &kp Z                 &kp X                 &kp C                &kp V                &kp B
-&kp N            &kp M                 &kp COMMA             &kp DOT              &kp SLASH            &mt250 RIGHT_SHIFT LANG1
+&mt250 RIGHT_SHIFT LANG2 &kp Z                 &kp X                 &kp C                &kp V                &kp B
+&kp N            　　　　　&kp M                 &kp COMMA             &kp DOT              &kp SLASH            &mt250 RIGHT_SHIFT LANG1
 
                          &mt250 LEFT_SHIFT TAB
                          &lt250 1 BACKSPACE
