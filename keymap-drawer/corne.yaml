@@ -127,8 +127,8 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - VOL DN
-  - VOL UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   Navigation:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -170,8 +170,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - BRI DN
-  - BRI UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   Bluetooth:
   - STUDIO
   - {t: ▽, type: trans}
