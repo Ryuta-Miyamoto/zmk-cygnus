@@ -1,0 +1,36 @@
+parse_config:
+  preprocess: true
+
+  modifier_fn_map:
+    left_ctrl: Ctrl
+    right_ctrl: Ctrl
+    left_shift: Shift
+    right_shift: Shift
+    left_alt: Alt
+    right_alt: Alt
+    left_gui: Cmd
+    right_gui: Cmd
+
+  raw_binding_map:
+    "&bootloader": BOOT
+    "&sys_reset": RESET
+    "&studio_unlock": STUDIO
+    "&bt BT_CLR": BT CLR
+    "&bt BT_CLR_ALL": BT ALL
+    "&kp LANG1": かな
+    "&kp LANG2": 英数
+
+  layer_legend_map:
+    "0": Base
+    "1": Symbols
+    "2": Fn / Num
+    "3": Navigation
+    "4": Settings
+
+draw_config:
+  key_w: 60
+  key_h: 56
+  split_gap: 30
+  combo_w: 28
+  combo_h: 26
+  arc_radius: 6
