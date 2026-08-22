@@ -93,35 +93,35 @@ layers:
   - F3
   - F4
   - F5
+  - '0'
   - '1'
   - '2'
   - '3'
   - +
   - '-'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - F6
   - F7
   - F8
   - F9
   - F10
+  - .
   - '4'
   - '5'
   - '6'
   - '*'
   - /
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - F11
   - F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - ','
   - '7'
   - '8'
   - '9'
-  - '0'
-  - {t: ▽, type: trans}
+  - '='
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -202,19 +202,65 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - BOOT
   - RESET
+  - BOOT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - BT ALL
   - BT CLR
-  - {t: BT ALL, type: held}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Media:
+  - POWER
+  - BRI DN
+  - BRI UP
+  - MUTE
+  - VOL DN
+  - VOL UP
+  - PREV
+  - PLAY PAUSE
+  - NEXT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mkp LCLK'
+  - '&mkp MCLK'
+  - '&mkp RCLK'
+  - {t: ▽, type: trans}
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_UP'
+  - '&mmv MOVE_RIGHT'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
 - p: [24, 35]
   k: Bluetooth
+- p: [38, 39]
+  k: Media
+  l: [Base]
