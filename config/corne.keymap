@@ -180,10 +180,10 @@
 &kp CARET        &kp AMPS              &kp ASTRK             &kp BSLH             &kp GRAVE            &trans
 
 &trans           &trans                &kp LS(COMMA)         &kp LS(LBKT)         &kp LBKT             &kp LS(N9)
-&kp LS(N0)       &kp RBKT              &kp LS(RBKT)          &kp LS(DOT)          &kp SEMI             &trans
+&kp LS(N0)       &kp RBKT              &kp LS(RBKT)          &kp LS(DOT)          &kp SEMI             &kp SINGLE_QUOTE
 
 &trans           &trans                &trans                &trans               &trans               &trans
-&kp EQUAL        &kp MINUS             &kp ASTRK             &kp SLASH            &kp SINGLE_QUOTE     &trans
+&kp EQUAL        &kp PLUS              &kp MINUS             &kp ASTRK            &kp SLASH            &trans
 
                          &trans
                          &trans
