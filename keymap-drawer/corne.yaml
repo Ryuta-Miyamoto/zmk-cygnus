@@ -23,8 +23,8 @@ layers:
   - {t: J, h: RIGHT GUI}
   - {t: K, h: RIGHT ALT}
   - {t: L, h: RIGHT CONTROL}
-  - SEMI
-  - SINGLE QUOTE
+  - ;
+  - ''''
   - {t: 英数, h: LEFT SHIFT}
   - Z
   - X
@@ -53,21 +53,21 @@ layers:
   - ^
   - '&'
   - '*'
-  - BSLH
+  - \
   - '`'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - <
   - '{'
-  - LBKT
+  - '['
   - (
   - )
-  - RBKT
+  - ']'
   - '}'
   - '>'
-  - SEMI
-  - SINGLE QUOTE
+  - ;
+  - ''''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
