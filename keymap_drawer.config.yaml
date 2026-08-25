@@ -15,18 +15,86 @@ parse_config:
     "&bootloader": BOOT
     "&sys_reset": RESET
     "&studio_unlock": STUDIO
+
+    "&bt BT_SEL 0": BT 0
+    "&bt BT_SEL 1": BT 1
+    "&bt BT_SEL 2": BT 2
+    "&bt BT_SEL 3": BT 3
+    "&bt BT_SEL 4": BT 4
     "&bt BT_CLR": BT CLR
     "&bt BT_CLR_ALL": BT ALL
+
     "&kp LANG1": かな
     "&kp LANG2": 英数
 
-  keycode_map:
-    "&kp LS(COMMA)": "<"
-    "&kp LS(DOT)": ">"
-    "&kp LS(LBKT)": "{"
-    "&kp LS(RBKT)": "}"
-    "&kp LS(N9)": "("
-    "&kp LS(N0)": ")"
+  zmk_keycode_map:
+    # Basic symbols
+    COMMA: ","
+    DOT: "."
+    SLASH: "/"
+    SEMICOLON: ";"
+    SQT: "'"
+    MINUS: "-"
+    EQUAL: "="
+
+    # Shifted symbols
+    LT: "<"
+    LESS_THAN: "<"
+
+    GT: ">"
+    GREATER_THAN: ">"
+
+    LBRC: "{"
+    LEFT_BRACE: "{"
+
+    RBRC: "}"
+    RIGHT_BRACE: "}"
+
+    LPAR: "("
+    LEFT_PARENTHESIS: "("
+
+    RPAR: ")"
+    RIGHT_PARENTHESIS: ")"
+
+    PIPE: "|"
+    TILDE: "~"
+    GRAVE: "`"
+
+    EXCL: "!"
+    AT: "@"
+    HASH: "#"
+    DLLR: "$"
+    PRCNT: "%"
+    CARET: "^"
+    AMPS: "&"
+    ASTRK: "*"
+    PLUS: "+"
+
+    # Navigation
+    LEFT: "←"
+    RIGHT: "→"
+    UP: "↑"
+    DOWN: "↓"
+
+    # Common keys
+    ESC: Esc
+    TAB: Tab
+    ENTER: Enter
+    RET: Enter
+    SPACE: Space
+    BSPC: Backspace
+    DEL: Delete
+
+    # Media
+    C_PLAY_PAUSE: Play/Pause
+    C_PREV: Previous
+    C_NEXT: Next
+    C_MUTE: Mute
+    C_VOL_DN: Vol -
+    C_VOL_UP: Vol +
+    C_BRI_DN: Brightness -
+    C_BRI_UP: Brightness +
+    C_POWER: Power
 
   layer_legend_map:
     "0": Base
@@ -36,10 +104,13 @@ parse_config:
     "4": Settings
     "5": Media
 
+
 draw_config:
   key_w: 60
   key_h: 56
   split_gap: 30
+
   combo_w: 28
   combo_h: 26
+
   arc_radius: 6
