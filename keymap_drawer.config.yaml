@@ -20,12 +20,21 @@ parse_config:
     "&kp LANG1": かな
     "&kp LANG2": 英数
 
+  keycode_map:
+    "&kp LS(COMMA)": "<"
+    "&kp LS(DOT)": ">"
+    "&kp LS(LBKT)": "{"
+    "&kp LS(RBKT)": "}"
+    "&kp LS(N9)": "("
+    "&kp LS(N0)": ")"
+
   layer_legend_map:
     "0": Base
     "1": Symbols
     "2": Fn / Num
     "3": Navigation
     "4": Settings
+    "5": Media
 
 draw_config:
   key_w: 60
