@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
   Base:
-  - ESC
+  - Esc
   - Q
   - W
   - E
@@ -23,8 +23,8 @@ layers:
   - {t: J, h: RIGHT GUI}
   - {t: K, h: RIGHT ALT}
   - {t: L, h: RIGHT CONTROL}
-  - ;
-  - ''''
+  - SEMI
+  - SINGLE QUOTE
   - {t: 英数, h: LEFT SHIFT}
   - Z
   - X
@@ -37,10 +37,10 @@ layers:
   - .
   - /
   - {t: かな, h: RIGHT SHIFT}
-  - {t: TAB, h: LEFT SHIFT}
+  - {t: Tab, h: LEFT SHIFT}
   - {t: BACKSPACE, h: Symbols}
-  - {t: SPACE, h: Fn / Num}
-  - {t: ENTER, h: Navigation}
+  - {t: Space, h: Fn / Num}
+  - {t: Enter, h: Navigation}
   - DELETE
   - RIGHT SHIFT
   Symbols:
@@ -53,21 +53,21 @@ layers:
   - ^
   - '&'
   - '*'
-  - \
+  - BSLH
   - '`'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - <
   - '{'
-  - '['
+  - LBKT
   - (
   - )
-  - ']'
+  - RBKT
   - '}'
   - '>'
-  - ;
-  - ''''
+  - SEMI
+  - SINGLE QUOTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -160,11 +160,11 @@ layers:
   - Shift+Cmd+Ctrl+5
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - PREV
+  - Previous
   - Cmd+LEFT ARROW
   - {t: ▽, type: trans}
   - Cmd+RIGHT ARROW
-  - NEXT
+  - Next
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -179,11 +179,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
+  - BT 0
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -216,15 +216,15 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Media:
-  - POWER
-  - BRI DN
-  - BRI UP
-  - MUTE
-  - VOL DN
-  - VOL UP
-  - PREV
-  - PLAY PAUSE
-  - NEXT
+  - Power
+  - Brightness -
+  - Brightness +
+  - Mute
+  - Vol -
+  - Vol +
+  - Previous
+  - Play/Pause
+  - Next
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
