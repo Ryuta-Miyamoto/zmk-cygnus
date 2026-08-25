@@ -58,14 +58,14 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Shift+,
-  - Shift+[
+  - <
+  - '{'
   - '['
-  - Shift+9
-  - Shift+0
+  - (
+  - )
   - ']'
-  - Shift+]
-  - Shift+.
+  - '}'
+  - '>'
   - ;
   - ''''
   - {t: ▽, type: trans}
