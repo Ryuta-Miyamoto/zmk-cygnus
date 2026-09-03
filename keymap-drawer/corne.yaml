@@ -264,3 +264,5 @@ combos:
 - p: [38, 39]
   k: Media
   l: [Base]
+- p: [5, 9, 29]
+  k: BOOT
