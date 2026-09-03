@@ -38,6 +38,21 @@
             bindings = <&mo 5>;
             layers = <0>;
         };
+
+        /*
+         * B + T + O simultaneously -> bootloader
+         * (same as double-pressing the reset button)
+         *
+         * Cygnus/Corne 3x6 positions:
+         * T = 5
+         * O = 9
+         * B = 29
+         */
+        bootloader_combo {
+            timeout-ms = <100>;
+            key-positions = <5 9 29>;
+            bindings = <&bootloader>;
+        };
     };
 
     behaviors {
