@@ -11,23 +11,17 @@
 };
 
 /*
- * XIAO nRF52840
- *
- * C0 -> D4
- * C1 -> D5
- * C2 -> D6
- * C3 -> D7
- * C4 -> D8
- * C5 -> D9
+ * Left and right PCBs are the same design (mirrored), so the right
+ * half's col-gpios are the reverse of the left half's - same pattern
+ * used by the upstream corne shield.
  */
-
 &kscan0 {
     col-gpios
-        = <&gpio0 4  GPIO_ACTIVE_HIGH>    // D4 - Col0
-        , <&gpio0 5  GPIO_ACTIVE_HIGH>    // D5 - Col1
-        , <&gpio1 11 GPIO_ACTIVE_HIGH>    // D6 - Col2
-        , <&gpio1 12 GPIO_ACTIVE_HIGH>    // D7 - Col3
-        , <&gpio1 13 GPIO_ACTIVE_HIGH>    // D8 - Col4
-        , <&gpio1 14 GPIO_ACTIVE_HIGH>    // D9 - Col5
+        = <&gpio0 5 GPIO_ACTIVE_HIGH>    // D5 - Col0
+        , <&gpio0 4 GPIO_ACTIVE_HIGH>    // D4 - Col1
+        , <&gpio0 29 GPIO_ACTIVE_HIGH>   // D3 - Col2
+        , <&gpio0 28 GPIO_ACTIVE_HIGH>   // D2 - Col3
+        , <&gpio0 3 GPIO_ACTIVE_HIGH>    // D1 - Col4
+        , <&gpio0 2 GPIO_ACTIVE_HIGH>    // D0 - Col5
         ;
 };
