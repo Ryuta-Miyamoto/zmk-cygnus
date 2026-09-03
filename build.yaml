@@ -17,7 +17,6 @@
 #     artifact-name: corne_left_with_logging
 #
 ---
----
 include:
   - board: xiao_ble//zmk
     shield: cygnus_xiao_left
