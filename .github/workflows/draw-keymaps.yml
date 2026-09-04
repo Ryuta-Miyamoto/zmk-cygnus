@@ -19,6 +19,7 @@ jobs:
       # cygnus_xiao is a custom out-of-tree shield, so it isn't in
       # keymap-drawer's known-keyboard database. It's physically the
       # same 3x6+3 layout as the upstream "corne" shield, so reuse
-      # that physical layout when drawing.
-      parse_args: |
-        cygnus_xiao: -l corne
+      # that physical layout when drawing (-z/--zmk-keyboard is a
+      # `keymap draw` option, not a `keymap parse` one).
+      draw_args: |
+        cygnus_xiao: -z corne

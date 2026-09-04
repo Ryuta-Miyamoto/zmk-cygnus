@@ -328,6 +328,13 @@ path.combo {
 <a href="#Media">
 <text x="420" y="224" class="combo tap layer-activator">Media</text>
 </a></g>
+<g class="combo combopos-2">
+<path d="M439,77 l-113,-30" class="combo"/>
+<path d="M439,77 l243,-39" class="combo"/>
+<path d="M439,77 l-115,68" class="combo"/>
+<rect rx="6" ry="6" x="425" y="64" width="28" height="26" class="combo"/>
+<text x="439" y="77" class="combo tap">BOOT</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 331)" class="layer-Symbols">
@@ -507,6 +514,13 @@ path.combo {
 <a href="#Bluetooth">
 <text x="420" y="161" class="combo tap layer-activator"><tspan style="font-size: 78%">Bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-1">
+<path d="M439,77 l-113,-30" class="combo"/>
+<path d="M439,77 l243,-39" class="combo"/>
+<path d="M439,77 l-115,68" class="combo"/>
+<rect rx="6" ry="6" x="425" y="64" width="28" height="26" class="combo"/>
+<text x="439" y="77" class="combo tap">BOOT</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 661)" class="layer-Fn / Num">
@@ -686,6 +700,13 @@ path.combo {
 <a href="#Bluetooth">
 <text x="420" y="161" class="combo tap layer-activator"><tspan style="font-size: 78%">Bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-1">
+<path d="M439,77 l-113,-30" class="combo"/>
+<path d="M439,77 l243,-39" class="combo"/>
+<path d="M439,77 l-115,68" class="combo"/>
+<rect rx="6" ry="6" x="425" y="64" width="28" height="26" class="combo"/>
+<text x="439" y="77" class="combo tap">BOOT</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 992)" class="layer-Navigation">
@@ -897,6 +918,13 @@ path.combo {
 <a href="#Bluetooth">
 <text x="420" y="161" class="combo tap layer-activator"><tspan style="font-size: 78%">Bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-1">
+<path d="M439,77 l-113,-30" class="combo"/>
+<path d="M439,77 l243,-39" class="combo"/>
+<path d="M439,77 l-115,68" class="combo"/>
+<rect rx="6" ry="6" x="425" y="64" width="28" height="26" class="combo"/>
+<text x="439" y="77" class="combo tap">BOOT</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1323)" class="layer-Bluetooth">
@@ -1089,6 +1117,13 @@ path.combo {
 <a href="#Bluetooth">
 <text x="420" y="161" class="combo tap layer-activator"><tspan style="font-size: 78%">Bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-1">
+<path d="M439,77 l-113,-30" class="combo"/>
+<path d="M439,77 l243,-39" class="combo"/>
+<path d="M439,77 l-115,68" class="combo"/>
+<rect rx="6" ry="6" x="425" y="64" width="28" height="26" class="combo"/>
+<text x="439" y="77" class="combo tap">BOOT</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1653)" class="layer-Media">
@@ -1291,6 +1326,13 @@ path.combo {
 <a href="#Bluetooth">
 <text x="420" y="161" class="combo tap layer-activator"><tspan style="font-size: 78%">Bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-1">
+<path d="M439,77 l-113,-30" class="combo"/>
+<path d="M439,77 l243,-39" class="combo"/>
+<path d="M439,77 l-115,68" class="combo"/>
+<rect rx="6" ry="6" x="425" y="64" width="28" height="26" class="combo"/>
+<text x="439" y="77" class="combo tap">BOOT</text>
+</g>
 </g>
 </g>
 </svg>
