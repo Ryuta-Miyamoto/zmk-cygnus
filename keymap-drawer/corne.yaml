@@ -44,7 +44,7 @@ layers:
   - DELETE
   - RIGHT SHIFT
   Symbols:
-  - {t: ▽, type: trans}
+  - '|'
   - '!'
   - '@'
   - '#'
@@ -55,7 +55,7 @@ layers:
   - '*'
   - \
   - '`'
-  - {t: ▽, type: trans}
+  - '~'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - <
