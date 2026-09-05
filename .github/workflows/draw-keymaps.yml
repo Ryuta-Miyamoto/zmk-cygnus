@@ -21,5 +21,9 @@ jobs:
       # same 3x6+3 layout as the upstream "corne" shield, so reuse
       # that physical layout when drawing (-z/--zmk-keyboard is a
       # `keymap draw` option, not a `keymap parse` one).
+      #
+      # No space after the colon, and the value quoted since it
+      # contains a space - the reusable workflow's own arg parser
+      # word-splits on whitespace otherwise and silently drops it.
       draw_args: |
-        cygnus_xiao: -z corne
+        cygnus_xiao:'-z corne'
