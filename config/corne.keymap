@@ -17,11 +17,11 @@
         compatible = "zmk,combos";
 
         /*
-         * EISU + KANA -> Layer 4 while held
+         * IME toggle (left) + IME toggle (right) -> Layer 4 while held
          *
          * Cygnus/Corne 3x6 positions:
-         * EISU = 24
-         * KANA = 35
+         * IME toggle (left)  = 24
+         * IME toggle (right) = 35
          */
         settings_layer {
             timeout-ms = <60>;
@@ -150,7 +150,7 @@
          *
          * ESC   Q   W   E   R   T      Y   U   I   O   P   -
          * GUI   A   S   D   F   G      H   J   K   L   ;   '
-         * 英数  Z   X   C   V   B      N   M   ,   .   /   かな
+         * C-SPC Z   X   C   V   B      N   M   ,   .   /   C-SPC
          *
          *       TAB/SFT BSPC/L1 SPACE/L2   ENTER/L3 DEL RSHIFT
          */
@@ -166,8 +166,8 @@
 &kp LEFT_GUI     &kp A                 &hml LEFT_CONTROL S   &hml LEFT_ALT D      &hml LEFT_GUI F      &kp G
 &kp H            &hmr RIGHT_GUI J      &hmr RIGHT_ALT K      &hmr RIGHT_CONTROL L &kp SEMI             &kp SINGLE_QUOTE
 
-&mt250 LEFT_SHIFT LANG2 &kp Z                 &kp X                 &kp C                &kp V                &kp B
-&kp N            &kp M                 &kp COMMA             &kp DOT              &kp SLASH            &mt250 RIGHT_SHIFT LANG1
+&mt250 LEFT_SHIFT LC(SPACE) &kp Z                 &kp X                 &kp C                &kp V                &kp B
+&kp N            &kp M                 &kp COMMA             &kp DOT              &kp SLASH            &mt250 RIGHT_SHIFT LC(SPACE)
 
                          &mt250 LEFT_SHIFT TAB
                          &lt250 1 BACKSPACE
@@ -242,8 +242,14 @@
 
         /*
          * ==========================================================
-         * Layer 3 - NAVIGATION / macOS
+         * Layer 3 - NAVIGATION / Windows
          * ==========================================================
+         *
+         * Row1: Win+PrtScn (full->file) / Win+Shift+S (select->clipboard) / PrtScn (full->clipboard)
+         * Row2: Win+Alt+PrtScn (game clip) / Win+Alt+R (game record toggle) / Win+G (game bar)
+         * HOME/END replace the old Ctrl+A/Ctrl+E emacs-style line nav, since
+         * Windows apps generally don't support that and Ctrl+A means Select All.
+         * Win+Left/Right already does something useful on Windows (snap window).
          */
 
         navigation_layer {
@@ -254,11 +260,11 @@
 &trans           &trans                &trans                &trans               &trans               &trans
 &kp LC(UP_ARROW) &kp LC(LEFT_ARROW)    &kp UP_ARROW          &kp LC(RIGHT_ARROW)  &kp LC(DOWN_ARROW)   &trans
 
-&trans           &kp LS(LG(N3))        &kp LS(LG(N4))        &kp LS(LG(N5))       &trans               &trans
-&kp LC(A)        &kp LEFT_ARROW        &kp DOWN_ARROW        &kp RIGHT_ARROW      &kp LC(E)            &trans
+&trans           &kp LG(PSCRN)         &kp LS(LG(S))         &kp PSCRN            &trans               &trans
+&kp HOME         &kp LEFT_ARROW        &kp DOWN_ARROW        &kp RIGHT_ARROW      &kp END              &trans
 
-&trans           &kp LS(LG(LC(N3)))    &kp LS(LG(LC(N4)))    &kp LS(LG(LC(N5)))   &trans               &trans
-&kp C_PREV       &kp LG(LEFT_ARROW)    &trans               &kp LG(RIGHT_ARROW)  &kp C_NEXT           &trans
+&trans           &kp LG(LA(PSCRN))     &kp LG(LA(R))         &kp LG(G)            &trans               &trans
+&kp C_PREV       &kp LG(LEFT_ARROW)    &trans                &kp LG(RIGHT_ARROW)  &kp C_NEXT           &trans
 
                          &trans
                          &trans
@@ -274,7 +280,7 @@
          * ==========================================================
          * Layer 4 - SETTINGS / Bluetooth
          *
-         * EISU + KANA simultaneously -> hold Layer 4
+         * IME toggle (left) + IME toggle (right) simultaneously -> hold Layer 4
          * ==========================================================
          */
 
