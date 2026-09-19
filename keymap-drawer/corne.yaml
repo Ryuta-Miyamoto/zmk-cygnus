@@ -13,16 +13,16 @@ layers:
   - O
   - P
   - '-'
-  - LEFT GUI
+  - LEFT CONTROL
   - A
-  - {t: S, h: LEFT CONTROL}
+  - {t: S, h: LEFT GUI}
   - {t: D, h: LEFT ALT}
-  - {t: F, h: LEFT GUI}
+  - {t: F, h: LEFT CONTROL}
   - G
   - H
-  - {t: J, h: RIGHT GUI}
+  - {t: J, h: RIGHT CONTROL}
   - {t: K, h: RIGHT ALT}
-  - {t: L, h: RIGHT CONTROL}
+  - {t: L, h: RIGHT GUI}
   - ;
   - ''''
   - {t: Ctrl+Space, h: LEFT SHIFT}
