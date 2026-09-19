@@ -25,7 +25,7 @@ layers:
   - {t: L, h: RIGHT CONTROL}
   - ;
   - ''''
-  - {t: 英数, h: LEFT SHIFT}
+  - {t: Ctrl+Space, h: LEFT SHIFT}
   - Z
   - X
   - C
@@ -36,7 +36,7 @@ layers:
   - ','
   - .
   - /
-  - {t: かな, h: RIGHT SHIFT}
+  - {t: Ctrl+Space, h: RIGHT SHIFT}
   - {t: Tab, h: LEFT SHIFT}
   - {t: BACKSPACE, h: Symbols}
   - {t: Space, h: Fn / Num}
@@ -143,21 +143,21 @@ layers:
   - Ctrl+DOWN ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Shift+Cmd+3
-  - Shift+Cmd+4
-  - Shift+Cmd+5
+  - Cmd+PSCRN
+  - Shift+Cmd+S
+  - PSCRN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Ctrl+A
+  - HOME
   - LEFT ARROW
   - DOWN ARROW
   - RIGHT ARROW
-  - Ctrl+E
+  - END
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Shift+Cmd+Ctrl+3
-  - Shift+Cmd+Ctrl+4
-  - Shift+Cmd+Ctrl+5
+  - Cmd+Alt+PSCRN
+  - Cmd+Alt+R
+  - Cmd+G
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Previous
