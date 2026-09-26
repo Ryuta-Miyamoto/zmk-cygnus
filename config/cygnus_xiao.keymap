@@ -17,7 +17,7 @@
         compatible = "zmk,combos";
 
         /*
-         * EISU + KANA -> Layer 4 while held
+         * EISU + KANA -> Layer 6 (Settings) while held
          *
          * Cygnus/Corne 3x6 positions:
          * EISU = 24
@@ -26,17 +26,18 @@
         settings_layer {
             timeout-ms = <60>;
             key-positions = <24 35>;
-            bindings = <&mo 4>;
+            bindings = <&mo 6>;
         };
 
         /*
-         * SPACE + ENTER simultaneously -> hold Layer 5
+         * SPACE + ENTER simultaneously -> hold Layer 7 (Media)
+         * Only on the Base layers (0 = Mac, 1 = Windows)
          */
         media_layer {
             timeout-ms = <60>;
             key-positions = <38 39>;
-            bindings = <&mo 5>;
-            layers = <0>;
+            bindings = <&mo 7>;
+            layers = <0 1>;
         };
 
         /*
@@ -52,6 +53,47 @@
             timeout-ms = <100>;
             key-positions = <5 9 29>;
             bindings = <&bootloader>;
+        };
+    };
+
+    /*
+     * Bluetooth profile + OS Base layer switch in one key press
+     *
+     * Profile 0, 1 -> Mac     (Layer 0)
+     * Profile 2, 3 -> Windows (Layer 1)
+     *
+     * &to deactivates every layer except the default layer (0) and
+     * activates the target, so it also cancels a stuck momentary layer.
+     * Windows Base (1) must stay below Symbols/Num/Nav (2+): the highest
+     * active layer wins, so temporary layers can only sit above it.
+     */
+    macros {
+        mac_bt_0: mac_bt_0 {
+            compatible = "zmk,behavior-macro";
+            label = "MAC_BT_0";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &bt BT_SEL 0 &to 0>;
+        };
+
+        mac_bt_1: mac_bt_1 {
+            compatible = "zmk,behavior-macro";
+            label = "MAC_BT_1";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &bt BT_SEL 1 &to 0>;
+        };
+
+        win_bt_2: win_bt_2 {
+            compatible = "zmk,behavior-macro";
+            label = "WIN_BT_2";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &bt BT_SEL 2 &to 1>;
+        };
+
+        win_bt_3: win_bt_3 {
+            compatible = "zmk,behavior-macro";
+            label = "WIN_BT_3";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &bt BT_SEL 3 &to 1>;
         };
     };
 
@@ -143,7 +185,9 @@
 
         /*
          * ==========================================================
-         * Layer 0 - BASE
+         * Layer 0 - BASE (Mac)
+         *
+         * Selected by Bluetooth profile 0 / 1 (&mac_bt_0 / &mac_bt_1)
          * ==========================================================
          *
          * LEFT                                  RIGHT
@@ -170,9 +214,9 @@
 &kp N            &kp M                 &kp COMMA             &kp DOT              &kp SLASH            &mt250 RIGHT_SHIFT LANG1
 
                          &mt250 LEFT_SHIFT TAB
-                         &lt250 1 BACKSPACE
-                         &lt250 2 SPACE
-                         &lt250 3 ENTER
+                         &lt250 2 BACKSPACE
+                         &lt250 3 SPACE
+                         &lt250 4 ENTER
                          &kp DELETE
                          &kp RIGHT_SHIFT
             >;
@@ -181,7 +225,47 @@
 
         /*
          * ==========================================================
-         * Layer 1 - SYMBOL
+         * Layer 1 - BASE (Windows)
+         *
+         * Selected by Bluetooth profile 2 / 3 (&win_bt_2 / &win_bt_3)
+         * Copy of Layer 0 with GUI <-> CTRL swapped on the home row / left edge.
+         * LANG1 / LANG2 are kept as-is.
+         *
+         * ESC   Q   W   E   R   T      Y   U   I   O   P   -
+         * CTRL  A   GUI ALT CTRL G     H   CTRL ALT GUI ;  '
+         * 英数  Z   X   C   V   B      N   M   ,   .   /   かな
+         *
+         *       TAB/SFT BSPC/L2 SPACE/L3   ENTER/L5 DEL RSHIFT
+         * ==========================================================
+         */
+
+        windows_layer {
+            display-name = "Base (Win)";
+
+            bindings = <
+
+&kp ESC          &kp Q                 &kp W                 &kp E                &kp R                &kp T
+&kp Y            &kp U                 &kp I                 &kp O                &kp P                &kp MINUS
+
+&kp LEFT_CONTROL &kp A                 &hml LEFT_GUI S       &hml LEFT_ALT D      &hml LEFT_CONTROL F  &kp G
+&kp H            &hmr RIGHT_CONTROL J  &hmr RIGHT_ALT K      &hmr RIGHT_GUI L     &kp SEMI             &kp SINGLE_QUOTE
+
+&mt250 LEFT_SHIFT LANG2 &kp Z                 &kp X                 &kp C                &kp V                &kp B
+&kp N            &kp M                 &kp COMMA             &kp DOT              &kp SLASH            &mt250 RIGHT_SHIFT LANG1
+
+                         &mt250 LEFT_SHIFT TAB
+                         &lt250 2 BACKSPACE
+                         &lt250 3 SPACE
+                         &lt250 5 ENTER
+                         &kp DELETE
+                         &kp RIGHT_SHIFT
+            >;
+        };
+
+
+        /*
+         * ==========================================================
+         * Layer 2 - SYMBOL
          * Conductor L1 based
          * ==========================================================
          */
@@ -212,7 +296,7 @@
 
         /*
          * ==========================================================
-         * Layer 2 - FUNCTION / NUMPAD
+         * Layer 3 - FUNCTION / NUMPAD
          * ==========================================================
          */
 
@@ -242,7 +326,9 @@
 
         /*
          * ==========================================================
-         * Layer 3 - NAVIGATION / macOS
+         * Layer 4 - NAVIGATION / macOS
+         *
+         * Reached from Mac Base (Layer 0) via ENTER/L4
          * ==========================================================
          */
 
@@ -272,9 +358,47 @@
 
         /*
          * ==========================================================
-         * Layer 4 - SETTINGS / Bluetooth
+         * Layer 5 - NAVIGATION / Windows
          *
-         * EISU + KANA simultaneously -> hold Layer 4
+         * Reached from Windows Base (Layer 1) via ENTER/L5.
+         * Same as the cygnus3x6_keymap_windows branch:
+         * Row1: Win+PrtScn / Win+Shift+S / PrtScn
+         * Row2: Win+Alt+PrtScn / Win+Alt+R / Win+G (Game Bar)
+         * HOME/END replace the emacs-style Ctrl+A/Ctrl+E (Select All / Find on Windows).
+         * ==========================================================
+         */
+
+        windows_navigation_layer {
+            display-name = "Nav (Win)";
+
+            bindings = <
+
+&trans           &trans                &trans                &trans               &trans               &trans
+&kp LC(UP_ARROW) &kp LC(LEFT_ARROW)    &kp UP_ARROW          &kp LC(RIGHT_ARROW)  &kp LC(DOWN_ARROW)   &trans
+
+&trans           &kp LG(PSCRN)         &kp LS(LG(S))         &kp PSCRN            &trans               &trans
+&kp HOME         &kp LEFT_ARROW        &kp DOWN_ARROW        &kp RIGHT_ARROW      &kp END              &trans
+
+&trans           &kp LG(LA(PSCRN))     &kp LG(LA(R))         &kp LG(G)            &trans               &trans
+&kp C_PREV       &kp LG(LEFT_ARROW)    &trans                &kp LG(RIGHT_ARROW)  &kp C_NEXT           &trans
+
+                         &trans
+                         &trans
+                         &trans
+                         &trans
+                         &trans
+                         &trans
+            >;
+        };
+
+
+        /*
+         * ==========================================================
+         * Layer 6 - SETTINGS / Bluetooth
+         *
+         * EISU + KANA simultaneously -> hold Layer 6
+         *
+         * BT 0/1 -> Mac Base, BT 2/3 -> Windows Base (macros)
          * ==========================================================
          */
 
@@ -284,7 +408,7 @@
             bindings = <
 
 &studio_unlock   &trans                &trans                &trans               &trans               &trans
-&bt BT_SEL 0     &bt BT_SEL 1         &bt BT_SEL 2         &bt BT_SEL 3         &bt BT_SEL 4         &trans
+&mac_bt_0        &mac_bt_1             &win_bt_2             &win_bt_3            &bt BT_SEL 4         &trans
 
 &trans           &trans                &trans                &trans               &trans               &trans
 &trans           &trans                &trans                &trans               &trans               &trans
@@ -303,9 +427,9 @@
 
         /*
          * ==========================================================
-         * Layer 5 - MEDIA / Mouse
+         * Layer 7 - MEDIA / Mouse
          *
-         * SPACE + ENTER simultaneously -> hold Layer 5
+         * SPACE + ENTER simultaneously -> hold Layer 7
          * ==========================================================
          */
 
