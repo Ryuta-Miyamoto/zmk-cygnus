@@ -196,7 +196,7 @@
          * GUI   A   S   D   F   G      H   J   K   L   ;   '
          * 英数  Z   X   C   V   B      N   M   ,   .   /   かな
          *
-         *       TAB/SFT BSPC/L1 SPACE/L2   ENTER/L3 DEL RSHIFT
+         *       TAB/SFT BSPC/L2 SPACE/L3   ENTER/L4 RSHIFT DEL
          */
 
         default_layer {
@@ -217,8 +217,8 @@
                          &lt250 2 BACKSPACE
                          &lt250 3 SPACE
                          &lt250 4 ENTER
-                         &kp DELETE
                          &kp RIGHT_SHIFT
+                         &kp DELETE
             >;
         };
 
@@ -235,7 +235,7 @@
          * CTRL  A   GUI ALT CTRL G     H   CTRL ALT GUI ;  '
          * 英数  Z   X   C   V   B      N   M   ,   .   /   かな
          *
-         *       TAB/SFT BSPC/L2 SPACE/L3   ENTER/L5 DEL RSHIFT
+         *       TAB/SFT BSPC/L2 SPACE/L3   ENTER/L5 RSHIFT DEL
          * ==========================================================
          */
 
@@ -257,8 +257,8 @@
                          &lt250 2 BACKSPACE
                          &lt250 3 SPACE
                          &lt250 5 ENTER
-                         &kp DELETE
                          &kp RIGHT_SHIFT
+                         &kp DELETE
             >;
         };
 
