@@ -41,8 +41,8 @@ layers:
   - {t: BACKSPACE, h: Symbols}
   - {t: Space, h: Fn / Num}
   - {t: Enter, h: Navigation}
-  - DELETE
   - RIGHT SHIFT
+  - DELETE
   Base (Win):
   - Esc
   - Q
@@ -84,8 +84,8 @@ layers:
   - {t: BACKSPACE, h: Symbols}
   - {t: Space, h: Fn / Num}
   - {t: Enter, h: Nav (Win)}
-  - DELETE
   - RIGHT SHIFT
+  - DELETE
   Symbols:
   - '|'
   - '!'
