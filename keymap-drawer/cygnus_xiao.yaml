@@ -13,19 +13,19 @@ layers:
   - O
   - P
   - '-'
-  - LEFT GUI
+  - Tab
   - A
   - {t: S, h: LEFT CONTROL}
   - {t: D, h: LEFT ALT}
   - {t: F, h: LEFT GUI}
-  - G
-  - H
+  - {t: G, h: Shift+LGUI}
+  - {t: H, h: Shift+LGUI}
   - {t: J, h: RIGHT GUI}
   - {t: K, h: RIGHT ALT}
   - {t: L, h: RIGHT CONTROL}
   - ;
   - ''''
-  - {t: 英数, h: LEFT SHIFT}
+  - LEFT GUI
   - Z
   - X
   - C
@@ -36,7 +36,7 @@ layers:
   - ','
   - .
   - /
-  - {t: かな, h: RIGHT SHIFT}
+  - RIGHT SHIFT
   - {t: Tab, h: LEFT SHIFT}
   - {t: BACKSPACE, h: Symbols}
   - {t: Space, h: Fn / Num}
@@ -56,19 +56,19 @@ layers:
   - O
   - P
   - '-'
-  - LEFT CONTROL
+  - Tab
   - A
   - {t: S, h: LEFT GUI}
   - {t: D, h: LEFT ALT}
   - {t: F, h: LEFT CONTROL}
-  - G
-  - H
+  - {t: G, h: Shift+LGUI}
+  - {t: H, h: Shift+LGUI}
   - {t: J, h: RIGHT CONTROL}
   - {t: K, h: RIGHT ALT}
   - {t: L, h: RIGHT GUI}
   - ;
   - ''''
-  - {t: 英数, h: LEFT SHIFT}
+  - LEFT CONTROL
   - Z
   - X
   - C
@@ -79,7 +79,7 @@ layers:
   - ','
   - .
   - /
-  - {t: かな, h: RIGHT SHIFT}
+  - RIGHT SHIFT
   - {t: Tab, h: LEFT SHIFT}
   - {t: BACKSPACE, h: Symbols}
   - {t: Space, h: Fn / Num}
@@ -350,5 +350,9 @@ combos:
 - p: [38, 39]
   k: Media
   l: [Base, Base (Win)]
+- p: [3, 4]
+  k: 英数
+- p: [7, 8]
+  k: かな
 - p: [5, 9, 29]
   k: BOOT
