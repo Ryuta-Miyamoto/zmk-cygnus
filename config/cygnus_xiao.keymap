@@ -213,11 +213,12 @@
          * LEFT                                  RIGHT
          *
          * ESC   Q   W   E   R   T      Y   U   I   O   P   -
-         * TAB   A   S   D   F   G      H   J   K   L   ;   '
-         * GUI   Z   X   C   V   B      N   M   ,   .   /   SHIFT
+         * TAB   A   S   D   F   G      H   J   K   L   ;/SFT '
+         * GUI   Z   X   C   V   B      N   M   ,   .   /   ALT
          *
          * E+R -> 英数 (LANG2) combo, U+I -> かな (LANG1) combo
          * G/H long-press -> GUI+SHIFT
+         * ; long-press -> SHIFT
          *
          *       TAB/SFT BSPC/L2 SPACE/L3   ENTER/L4 RSHIFT DEL
          */
@@ -231,10 +232,10 @@
 &kp Y            &kp U                 &kp I                 &kp O                &kp P                &kp MINUS
 
 &kp TAB          &kp A                 &hml LEFT_CONTROL S   &hml LEFT_ALT D      &hml LEFT_GUI F      &mt250 LS(LGUI) G
-&mt250 LS(LGUI) H &hmr RIGHT_GUI J     &hmr RIGHT_ALT K      &hmr RIGHT_CONTROL L &kp SEMI             &kp SINGLE_QUOTE
+&mt250 LS(LGUI) H &hmr RIGHT_GUI J     &hmr RIGHT_ALT K      &hmr RIGHT_CONTROL L &mt250 RIGHT_SHIFT SEMI &kp SINGLE_QUOTE
 
 &kp LEFT_GUI     &kp Z                 &kp X                 &kp C                &kp V                &kp B
-&kp N            &kp M                 &kp COMMA             &kp DOT              &kp SLASH            &kp RIGHT_SHIFT
+&kp N            &kp M                 &kp COMMA             &kp DOT              &kp SLASH            &kp RIGHT_ALT
 
                          &mt250 LEFT_SHIFT TAB
                          &lt250 2 BACKSPACE
@@ -255,11 +256,12 @@
          * LANG1 / LANG2 are kept as-is.
          *
          * ESC   Q   W   E   R   T      Y   U   I   O   P   -
-         * TAB   A   GUI ALT CTRL G     H   CTRL ALT GUI ;  '
-         * CTRL  Z   X   C   V   B      N   M   ,   .   /   SHIFT
+         * TAB   A   GUI ALT CTRL G     H   CTRL ALT GUI ;/SFT '
+         * CTRL  Z   X   C   V   B      N   M   ,   .   /   ALT
          *
          * E+R -> 英数 (LANG2) combo, U+I -> かな (LANG1) combo
          * G/H long-press -> GUI+SHIFT
+         * ; long-press -> SHIFT
          *
          *       TAB/SFT BSPC/L2 SPACE/L3   ENTER/L5 RSHIFT DEL
          * ==========================================================
@@ -274,10 +276,10 @@
 &kp Y            &kp U                 &kp I                 &kp O                &kp P                &kp MINUS
 
 &kp TAB          &kp A                 &hml LEFT_GUI S       &hml LEFT_ALT D      &hml LEFT_CONTROL F  &mt250 LS(LGUI) G
-&mt250 LS(LGUI) H &hmr RIGHT_CONTROL J &hmr RIGHT_ALT K      &hmr RIGHT_GUI L     &kp SEMI             &kp SINGLE_QUOTE
+&mt250 LS(LGUI) H &hmr RIGHT_CONTROL J &hmr RIGHT_ALT K      &hmr RIGHT_GUI L     &mt250 RIGHT_SHIFT SEMI &kp SINGLE_QUOTE
 
 &kp LEFT_CONTROL &kp Z                 &kp X                 &kp C                &kp V                &kp B
-&kp N            &kp M                 &kp COMMA             &kp DOT              &kp SLASH            &kp RIGHT_SHIFT
+&kp N            &kp M                 &kp COMMA             &kp DOT              &kp SLASH            &kp RIGHT_ALT
 
                          &mt250 LEFT_SHIFT TAB
                          &lt250 2 BACKSPACE
