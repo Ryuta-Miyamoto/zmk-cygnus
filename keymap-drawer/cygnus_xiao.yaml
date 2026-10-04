@@ -14,15 +14,15 @@ layers:
   - P
   - '-'
   - Tab
-  - A
-  - {t: S, h: LEFT CONTROL}
-  - {t: D, h: LEFT ALT}
+  - {t: A, h: LEFT SHIFT}
+  - {t: S, h: LEFT ALT}
+  - {t: D, h: LEFT CONTROL}
   - {t: F, h: LEFT GUI}
   - {t: G, h: Shift+LGUI}
   - {t: H, h: Shift+LGUI}
   - {t: J, h: RIGHT GUI}
-  - {t: K, h: RIGHT ALT}
-  - {t: L, h: RIGHT CONTROL}
+  - {t: K, h: RIGHT CONTROL}
+  - {t: L, h: RIGHT ALT}
   - {t: ;, h: RIGHT SHIFT}
   - ''''
   - LEFT GUI
@@ -79,7 +79,7 @@ layers:
   - ','
   - .
   - /
-  - RIGHT ALT
+  - RIGHT GUI
   - {t: Tab, h: LEFT SHIFT}
   - {t: BACKSPACE, h: Symbols}
   - {t: Space, h: Fn / Num}
