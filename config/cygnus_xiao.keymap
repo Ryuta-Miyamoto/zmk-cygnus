@@ -41,22 +41,22 @@
         };
 
         /*
-         * E + R simultaneously -> 英数 (LANG2)
-         * U + I simultaneously -> かな (LANG1)
+         * C + V simultaneously -> 英数 (LANG2)
+         * M + COMMA simultaneously -> かな (LANG1)
          *
          * Cygnus/Corne 3x6 positions:
-         * E = 3, R = 4
-         * U = 7, I = 8
+         * C = 27, V = 28
+         * M = 31, COMMA = 32
          */
         eisu_combo {
             timeout-ms = <60>;
-            key-positions = <3 4>;
+            key-positions = <27 28>;
             bindings = <&kp LANG2>;
         };
 
         kana_combo {
             timeout-ms = <60>;
-            key-positions = <7 8>;
+            key-positions = <31 32>;
             bindings = <&kp LANG1>;
         };
 
@@ -239,14 +239,14 @@
          * TAB   A/SFT S   D   F   G    H   J   K   L   ;/SFT '
          * GUI   Z   X   C   V   B      N   M   ,   .   /   ALT
          *
-         * E+R -> 英数 (LANG2) combo, U+I -> かな (LANG1) combo
+         * C+V -> 英数 (LANG2) combo, M+COMMA -> かな (LANG1) combo
          * O+P -> MINUS combo, DOT+SLASH -> SINGLE_QUOTE combo
          * G/H long-press -> GUI+SHIFT
          * A / ; long-press -> SHIFT
          * aerospace (macOS tiling WM) tuning: ALT <-> CONTROL swapped
          * on S/D and K/L vs. the stock layout
          *
-         *       TAB/SFT BSPC/L3 SPACE/L2   ENTER/L4 DEL RSHIFT
+         *       TAB/SFT BSPC/L3 SPACE/L2   ENTER/L4 -   RSHIFT
          */
 
         default_layer {
@@ -267,7 +267,7 @@
                          &lt250 3 BACKSPACE
                          &lt250 2 SPACE
                          &lt250 4 ENTER
-                         &kp DELETE
+                         &kp MINUS
                          &kp RIGHT_SHIFT
             >;
         };
@@ -285,12 +285,12 @@
          * TAB   A   GUI ALT CTRL G     H   CTRL ALT GUI ;/SFT '
          * CTRL  Z   X   C   V   B      N   M   ,   .   /   GUI
          *
-         * E+R -> 英数 (LANG2) combo, U+I -> かな (LANG1) combo
+         * C+V -> 英数 (LANG2) combo, M+COMMA -> かな (LANG1) combo
          * O+P -> MINUS combo, DOT+SLASH -> SINGLE_QUOTE combo
          * G/H long-press -> GUI+SHIFT
          * ; long-press -> SHIFT
          *
-         *       TAB/SFT BSPC/L3 SPACE/L2   ENTER/L5 DEL RSHIFT
+         *       TAB/SFT BSPC/L3 SPACE/L2   ENTER/L5 -   RSHIFT
          * ==========================================================
          */
 
@@ -312,7 +312,7 @@
                          &lt250 3 BACKSPACE
                          &lt250 2 SPACE
                          &lt250 5 ENTER
-                         &kp DELETE
+                         &kp MINUS
                          &kp RIGHT_SHIFT
             >;
         };
@@ -352,6 +352,9 @@
         /*
          * ==========================================================
          * Layer 3 - FUNCTION / NUMPAD
+         *
+         * DELETE sits on the right thumb (same key that is MINUS on
+         * the Base layers): hold BSPC/L3 + that key -> DELETE.
          * ==========================================================
          */
 
@@ -373,7 +376,7 @@
                          &trans
                          &trans
                          &trans
-                         &trans
+                         &kp DELETE
                          &trans
             >;
         };
