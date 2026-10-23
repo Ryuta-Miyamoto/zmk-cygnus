@@ -41,7 +41,7 @@ layers:
   - {t: BACKSPACE, h: Fn / Num}
   - {t: Space, h: Symbols}
   - {t: Enter, h: Navigation}
-  - DELETE
+  - '-'
   - RIGHT SHIFT
   Base (Win):
   - Esc
@@ -84,7 +84,7 @@ layers:
   - {t: BACKSPACE, h: Fn / Num}
   - {t: Space, h: Symbols}
   - {t: Enter, h: Nav (Win)}
-  - DELETE
+  - '-'
   - RIGHT SHIFT
   Symbols:
   - {t: ▽, type: trans}
@@ -170,7 +170,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - DELETE
   - {t: ▽, type: trans}
   Navigation:
   - {t: ▽, type: trans}
@@ -350,9 +350,9 @@ combos:
 - p: [38, 39]
   k: Media
   l: [Base, Base (Win)]
-- p: [3, 4]
+- p: [27, 28]
   k: 英数
-- p: [7, 8]
+- p: [31, 32]
   k: かな
 - p: [9, 10]
   k: '-'

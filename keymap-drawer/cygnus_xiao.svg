@@ -310,7 +310,7 @@ path.combo {
 </a></g>
 <g transform="translate(554, 213) rotate(-15.0)" class="key keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">DELETE</text>
+<text x="0" y="0" class="key tap">-</text>
 </g>
 <g transform="translate(616, 205)" class="key keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -333,12 +333,12 @@ path.combo {
 <text x="420" y="224" class="combo tap layer-activator">Media</text>
 </a></g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="210" y="18" width="28" height="26" class="combo"/>
-<text x="224" y="32" class="combo tap">英数</text>
+<rect rx="6" ry="6" x="210" y="130" width="28" height="26" class="combo"/>
+<text x="224" y="144" class="combo tap">英数</text>
 </g>
 <g class="combo combopos-3">
-<rect rx="6" ry="6" x="602" y="18" width="28" height="26" class="combo"/>
-<text x="616" y="32" class="combo tap">かな</text>
+<rect rx="6" ry="6" x="602" y="130" width="28" height="26" class="combo"/>
+<text x="616" y="144" class="combo tap">かな</text>
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="714" y="29" width="28" height="26" class="combo"/>
@@ -542,7 +542,7 @@ path.combo {
 </a></g>
 <g transform="translate(554, 213) rotate(-15.0)" class="key keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">DELETE</text>
+<text x="0" y="0" class="key tap">-</text>
 </g>
 <g transform="translate(616, 205)" class="key keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -565,12 +565,12 @@ path.combo {
 <text x="420" y="224" class="combo tap layer-activator">Media</text>
 </a></g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="210" y="18" width="28" height="26" class="combo"/>
-<text x="224" y="32" class="combo tap">英数</text>
+<rect rx="6" ry="6" x="210" y="130" width="28" height="26" class="combo"/>
+<text x="224" y="144" class="combo tap">英数</text>
 </g>
 <g class="combo combopos-3">
-<rect rx="6" ry="6" x="602" y="18" width="28" height="26" class="combo"/>
-<text x="616" y="32" class="combo tap">かな</text>
+<rect rx="6" ry="6" x="602" y="130" width="28" height="26" class="combo"/>
+<text x="616" y="144" class="combo tap">かな</text>
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="714" y="29" width="28" height="26" class="combo"/>
@@ -767,12 +767,12 @@ path.combo {
 <text x="420" y="205" class="combo tap layer-activator"><tspan style="font-size: 78%">Bluetooth</tspan></text>
 </a></g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="210" y="18" width="28" height="26" class="combo"/>
-<text x="224" y="32" class="combo tap">英数</text>
+<rect rx="6" ry="6" x="210" y="130" width="28" height="26" class="combo"/>
+<text x="224" y="144" class="combo tap">英数</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="602" y="18" width="28" height="26" class="combo"/>
-<text x="616" y="32" class="combo tap">かな</text>
+<rect rx="6" ry="6" x="602" y="130" width="28" height="26" class="combo"/>
+<text x="616" y="144" class="combo tap">かな</text>
 </g>
 <g class="combo combopos-3">
 <path d="M439,77 l-113,-30" class="combo"/>
@@ -945,9 +945,9 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(554, 213) rotate(-15.0)" class="key trans keypos-40">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(554, 213) rotate(-15.0)" class="key keypos-40">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">DELETE</text>
 </g>
 <g transform="translate(616, 205)" class="key trans keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -961,12 +961,12 @@ path.combo {
 <text x="420" y="205" class="combo tap layer-activator"><tspan style="font-size: 78%">Bluetooth</tspan></text>
 </a></g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="210" y="18" width="28" height="26" class="combo"/>
-<text x="224" y="32" class="combo tap">英数</text>
+<rect rx="6" ry="6" x="210" y="130" width="28" height="26" class="combo"/>
+<text x="224" y="144" class="combo tap">英数</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="602" y="18" width="28" height="26" class="combo"/>
-<text x="616" y="32" class="combo tap">かな</text>
+<rect rx="6" ry="6" x="602" y="130" width="28" height="26" class="combo"/>
+<text x="616" y="144" class="combo tap">かな</text>
 </g>
 <g class="combo combopos-3">
 <path d="M439,77 l-113,-30" class="combo"/>
@@ -1187,12 +1187,12 @@ path.combo {
 <text x="420" y="205" class="combo tap layer-activator"><tspan style="font-size: 78%">Bluetooth</tspan></text>
 </a></g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="210" y="18" width="28" height="26" class="combo"/>
-<text x="224" y="32" class="combo tap">英数</text>
+<rect rx="6" ry="6" x="210" y="130" width="28" height="26" class="combo"/>
+<text x="224" y="144" class="combo tap">英数</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="602" y="18" width="28" height="26" class="combo"/>
-<text x="616" y="32" class="combo tap">かな</text>
+<rect rx="6" ry="6" x="602" y="130" width="28" height="26" class="combo"/>
+<text x="616" y="144" class="combo tap">かな</text>
 </g>
 <g class="combo combopos-3">
 <path d="M439,77 l-113,-30" class="combo"/>
@@ -1409,12 +1409,12 @@ path.combo {
 <text x="420" y="205" class="combo tap layer-activator"><tspan style="font-size: 78%">Bluetooth</tspan></text>
 </a></g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="210" y="18" width="28" height="26" class="combo"/>
-<text x="224" y="32" class="combo tap">英数</text>
+<rect rx="6" ry="6" x="210" y="130" width="28" height="26" class="combo"/>
+<text x="224" y="144" class="combo tap">英数</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="602" y="18" width="28" height="26" class="combo"/>
-<text x="616" y="32" class="combo tap">かな</text>
+<rect rx="6" ry="6" x="602" y="130" width="28" height="26" class="combo"/>
+<text x="616" y="144" class="combo tap">かな</text>
 </g>
 <g class="combo combopos-3">
 <path d="M439,77 l-113,-30" class="combo"/>
@@ -1608,12 +1608,12 @@ path.combo {
 <text x="420" y="205" class="combo tap layer-activator"><tspan style="font-size: 78%">Bluetooth</tspan></text>
 </a></g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="210" y="18" width="28" height="26" class="combo"/>
-<text x="224" y="32" class="combo tap">英数</text>
+<rect rx="6" ry="6" x="210" y="130" width="28" height="26" class="combo"/>
+<text x="224" y="144" class="combo tap">英数</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="602" y="18" width="28" height="26" class="combo"/>
-<text x="616" y="32" class="combo tap">かな</text>
+<rect rx="6" ry="6" x="602" y="130" width="28" height="26" class="combo"/>
+<text x="616" y="144" class="combo tap">かな</text>
 </g>
 <g class="combo combopos-3">
 <path d="M439,77 l-113,-30" class="combo"/>
@@ -1825,12 +1825,12 @@ path.combo {
 <text x="420" y="205" class="combo tap layer-activator"><tspan style="font-size: 78%">Bluetooth</tspan></text>
 </a></g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="210" y="18" width="28" height="26" class="combo"/>
-<text x="224" y="32" class="combo tap">英数</text>
+<rect rx="6" ry="6" x="210" y="130" width="28" height="26" class="combo"/>
+<text x="224" y="144" class="combo tap">英数</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="602" y="18" width="28" height="26" class="combo"/>
-<text x="616" y="32" class="combo tap">かな</text>
+<rect rx="6" ry="6" x="602" y="130" width="28" height="26" class="combo"/>
+<text x="616" y="144" class="combo tap">かな</text>
 </g>
 <g class="combo combopos-3">
 <path d="M439,77 l-113,-30" class="combo"/>
