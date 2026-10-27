@@ -1,0 +1,23 @@
+config CYGNUS_BATTERY_LED
+    bool "Battery / charging status on the XIAO BLE onboard RGB LED"
+    depends on ZMK_BATTERY_REPORTING
+    help
+      On boot (and on wake from deep sleep) the onboard RGB LED shows the
+      battery level for a moment. While USB power is present it shows the
+      charging state: blinking cyan = charging, solid green = charged.
+
+if CYGNUS_BATTERY_LED
+
+config CYGNUS_BATTERY_LED_BOOT_MS
+    int "How long the battery level is shown on boot (ms)"
+    default 2000
+
+config CYGNUS_BATTERY_LED_LEVEL_HIGH
+    int "Battery level (%) at or above which the boot color is green"
+    default 80
+
+config CYGNUS_BATTERY_LED_LEVEL_LOW
+    int "Battery level (%) below which the boot color is red"
+    default 20
+
+endif
